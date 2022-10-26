@@ -25,6 +25,8 @@
     line-height: 37px;
     text-align: center;
     color: #293264;
+    padding: 0px;
+    margin: 0px;
   }
   
   .start-container-subtitle{
@@ -60,7 +62,14 @@
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   
+   height: 850px;
+   width: 850px;
+  }
+
+  .quiz-container-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
   .quiz-container-question{
@@ -103,6 +112,7 @@
   .button-container{
     display: flex;
     align-self: center;
+    margin-top: 35px;
   }
   
   .button-container-score{

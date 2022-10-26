@@ -92,6 +92,7 @@ export default function App()
     
     return(<div className='app'>
         {showStart ? <Start startQuiz={startQuiz}/> : 
+            <div className='quiz-container-div'>
             <div className='quiz-container'>
                 {quests}
                 {showAnswers ? 
@@ -101,6 +102,7 @@ export default function App()
                     </div> 
                     :
                     <button className='button' disabled={!allComplete} onClick={checkAnswers}>Check Answers</button>}
+            </div>
             </div>}
             <img className='blob1' src={blob} alt=''/>
     <img className='blob2' src={blob} alt=''/>
